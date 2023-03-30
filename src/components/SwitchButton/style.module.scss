@@ -1,0 +1,35 @@
+.wrapper {
+  @apply flex items-center justify-between;
+
+  &.notContainer {
+    @apply px-25 py-20;
+  }
+
+  &.isBackground {
+    @apply bg-white bg-opacity-5 rounded-full;
+  }
+
+  .label {
+    @apply text-20 text-white font-light mr-4 capitalize;
+  }
+
+  .switch {
+    @apply relative rounded-full inline-flex items-center justify-center h-25 w-44 cursor-pointer focus:outline-none;
+
+    .switchContainer {
+      @apply bg-white bg-opacity-10 absolute h-full w-full mx-auto rounded-full;
+    }
+
+    .switcher {
+      @apply pointer-events-none absolute left-0 inline-block h-25 w-25 rounded-full shadow transform ring-0 transition-transform ease-in-out duration-200;
+
+      &.enable {
+        @apply translate-x-20 bg-gradient-to-r from-brownDark  to-brownMedium;
+      }
+
+      &.disable {
+        @apply translate-x-0 bg-white bg-opacity-30;
+      }
+    }
+  }
+}

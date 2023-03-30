@@ -1,0 +1,67 @@
+[debug] [2021-07-01T12:02:25.494Z] ----------------------------------------------------------------------
+[debug] [2021-07-01T12:02:25.496Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Darkhorse\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init firestore
+[debug] [2021-07-01T12:02:25.497Z] CLI Version:   9.12.1
+[debug] [2021-07-01T12:02:25.497Z] Platform:      win32
+[debug] [2021-07-01T12:02:25.497Z] Node Version:  v14.17.0
+[debug] [2021-07-01T12:02:25.498Z] Time:          Thu Jul 01 2021 15:02:25 GMT+0300 (Moscow Standard Time)
+[debug] [2021-07-01T12:02:25.498Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-07-01T12:02:25.500Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2021-07-01T12:02:25.524Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-01T12:02:25.524Z] > authorizing via signed-in user (darkhorse0723@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  D:\Project\Guru\2021_06_07_GERMANY_Loki\tortija-react
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[debug] [2021-07-01T12:02:28.488Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2021-07-01T12:02:28.488Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using tortija-19187. 
+[debug] [2021-07-01T12:02:48.991Z] > refreshing access token with scopes: []
+[debug] [2021-07-01T12:02:48.992Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-01T12:02:49.845Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Thu, 01 Jul 2021 12:01:57 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-01T12:02:49.906Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/tortija-19187 [none]
+[debug] [2021-07-01T12:02:51.368Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/tortija-19187 200
+[debug] [2021-07-01T12:02:51.368Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/tortija-19187 {"projectId":"tortija-19187","projectNumber":"455282759169","displayName":"Tortija","name":"projects/tortija-19187","resources":{"hostingSite":"tortija-19187","storageBucket":"tortija-19187.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+=== Firestore Setup
+[debug] [2021-07-01T12:02:51.370Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-07-01T12:02:51.370Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-07-01T12:02:52.361Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Thu, 01 Jul 2021 12:02:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-01T12:02:52.424Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/tortija-19187/services/firestore.googleapis.com  
+ 
+[debug] [2021-07-01T12:02:54.826Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 01 Jul 2021 12:02:02 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-01T12:02:54.826Z] >>> HTTP REQUEST GET https://appengine.googleapis.com/v1/apps/tortija-19187  
+ 
+[debug] [2021-07-01T12:02:56.155Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 01 Jul 2021 12:02:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-07-01T12:02:56.155Z] database_type: CLOUD_FIRESTORE
+[debug] [2021-07-01T12:02:56.156Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-07-01T12:02:56.156Z] > authorizing via signed-in user (darkhorse0723@gmail.com)
+[debug] [2021-07-01T12:02:56.156Z] [iam] checking project tortija-19187 for permissions ["firebase.projects.get"]
+[debug] [2021-07-01T12:02:56.156Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/tortija-19187:testIamPermissions  
+ {"permissions":["firebase.projects.get"]}
+[debug] [2021-07-01T12:02:58.180Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Thu, 01 Jul 2021 12:02:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=719","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firestore Security Rules allow you to define how and when to allow
+[info] requests. You can keep these rules in your project directory
+[info] and publish them with firebase deploy.
+[info] 

@@ -1,0 +1,19 @@
+.wrapper {
+  @apply mx-auto tablet:w-96 w-full flex flex-col items-center mt-36 px-4;
+}
+
+.buttonWrapper {
+  @apply mt-12 w-full;
+}
+
+.stripeWrapper {
+  @apply w-full py-20 space-y-10;
+
+  .switchWrapper {
+    @apply w-full my-4 mx-auto;
+  }
+
+  .cardInput {
+    @apply p-10 border border-white rounded-md bg-white;
+  }
+}

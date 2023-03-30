@@ -1,0 +1,11 @@
+.header {
+  @apply sticky top-0 bg-blackDark z-50 mb-30 pb-10;
+
+  .buttons {
+    @apply flex justify-between items-center;
+  }
+}
+
+.content {
+  @apply space-y-30 pb-100;
+}

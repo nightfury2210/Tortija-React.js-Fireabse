@@ -1,0 +1,30 @@
+.header {
+  @apply flex w-1/2 pr-30 justify-between items-center pt-30 pb-20;
+}
+
+.wrapper {
+  @apply grid desktop:grid-cols-2 gap-x-60 h-full;
+
+  .menuWrapper {
+    @apply desktop:block space-y-40;
+
+    .avatar {
+      @apply flex items-center;
+
+      .photo {
+        @apply w-100 h-100 rounded-30 overflow-hidden mr-20;
+      }
+      .name {
+        @apply text-22;
+      }
+    }
+
+    .menuList {
+      @apply desktop:inline-block space-y-25 w-full desktop:pb-0 pb-100;
+    }
+  }
+
+  .content {
+    @apply h-full relative pr-10 desktop:overflow-x-hidden;
+  }
+}

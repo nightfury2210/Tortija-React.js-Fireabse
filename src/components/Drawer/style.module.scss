@@ -1,0 +1,11 @@
+.backDrop {
+  @apply fixed w-screen h-screen bg-black bg-opacity-50 inset-0 z-40;
+}
+
+.drawerContainer {
+  @apply transform fixed tablet:inset-y-20 inset-y-0 z-50 right-0 tablet:w-450 w-full max-w-md bg-blackDark shadow-main rounded-tl-42 rounded-bl-42 overflow-hidden ease-in-out transition-all duration-300;
+}
+
+.drawerCloseButton {
+  @apply absolute h-full w-45 flex items-center justify-end cursor-pointer left-0
+}

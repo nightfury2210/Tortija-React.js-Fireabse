@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-lightGray;
+  @apply text-white;
+  /* @apply overflow-hidden; */
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+.rc-slider-tooltip {
+  @apply -top-35 !important;
+}
+.rc-slider-tooltip-arrow {
+  @apply hidden !important;
+}
+.rc-slider-tooltip-inner {
+  @apply border-none bg-transparent shadow-none cursor-pointer !important;
+}
+.rc-slider-rail {
+  @apply h-px bg-blackSemiDark !important;
+}
+.rc-slider-track {
+  @apply hidden;
+}
+.rc-slider-handle {
+  @apply -mt-10 border-none border-0 w-20 h-20 focus:outline-none shadow-none bg-blackSemiDark !important;
+}
+
+.react-switch-selector-wrapper {
+  @apply rounded-full !important;
+}
+.react-switch-selector-wrapper::before {
+  @apply bg-gradient-to-r from-brownDark  to-brownMedium rounded-full border-none !important;
+}
+.react-switch-selector-option-label {
+  @apply py-10 !important;
+}
+
+.custom-scrollbar {
+  @apply scrollbar-thin scrollbar-thumb-gray-600;
+}
+
+@media (min-width: 1025px) {
+  .custom-desktop-scrollbar {
+    @apply scrollbar-thin scrollbar-thumb-gray-600;
+  }
+}
+
+.toastContainer {
+  z-index: 9999;
+}
+
+.custom-select__control {
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: none !important;
+}
+
+.slick-dots li button::before {
+  font-size: 10px;
+  color: #c97132;
+}
+
+.slick-dots li.slick-active button::before {
+  color: #c97132;
+  opacity: 1;
+}
+
+.slick-prev:before {
+  color: #c97132 !important;
+}
+.slick-next:before {
+  color: #c97132 !important;
+}

@@ -1,0 +1,15 @@
+.inputStyle {
+    @apply appearance-none block w-full px-27 py-10 rounded-full text-18 placeholder-gray-400 focus:outline-none bg-white bg-opacity-20 text-white;
+
+    &.suffixInput {
+        @apply pr-60;
+    }
+}
+
+.inputWrapper {
+    @apply relative;
+
+    .suffix {
+        @apply absolute right-20 top-1/2 transform -translate-y-2/3 text-18 leading-18 text-white;
+    }
+}

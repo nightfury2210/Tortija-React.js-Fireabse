@@ -1,0 +1,7 @@
+.customUserInput {
+  @apply appearance-none block text-16 font-extralight placeholder-gray-400 focus:outline-none bg-lightDarkGray bg-opacity-20 text-white text-center;
+}
+
+.customUserInputLight {
+  @apply appearance-none block text-16 font-extralight placeholder-gray-400 focus:outline-none bg-lightGrayAlternative text-white text-center;
+}

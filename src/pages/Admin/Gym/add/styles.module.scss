@@ -1,0 +1,15 @@
+.header {
+  @apply flex mb-6 items-center;
+
+  .backButton {
+    @apply cursor-pointer mr-4;
+  }
+}
+
+.content {
+  @apply w-2/3 mx-auto;
+
+  .form {
+    @apply grid grid-cols-1 gap-5;
+  }
+}

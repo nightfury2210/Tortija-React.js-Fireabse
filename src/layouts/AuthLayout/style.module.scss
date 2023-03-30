@@ -1,0 +1,31 @@
+.wrapper {
+  @apply w-screen h-screen flex items-center overflow-hidden desktop:bg-blackDark;
+
+  .backImage {
+    @apply desktop:block hidden absolute z-0 w-full h-full pl-350;
+
+    .image {
+      @apply h-full w-full object-cover;
+    }
+  }
+
+  .body {
+    @apply h-screen w-full relative desktop:shadow-main bg-blackDark z-20 desktop:w-400 desktop:h-5/6 desktop:left-150 desktop:rounded-42 overflow-hidden;
+
+    .container {
+      @apply h-full overflow-y-auto overflow-x-hidden;
+
+      .image {
+        @apply desktop:hidden block -z-10 h-full w-full object-cover absolute top-0;
+      }
+    }
+    
+    .content {
+      @apply min-h-full flex flex-wrap justify-center items-center desktop:bg-transparent;
+
+      &.isBack {
+        @apply bg-black desktop:bg-transparent bg-opacity-80 desktop:px-20;
+      }
+    }
+  }
+}

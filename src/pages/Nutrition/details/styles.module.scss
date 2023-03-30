@@ -1,0 +1,166 @@
+.wrapper {
+  @apply h-screen overflow-hidden;
+
+  .content {
+    @apply grid desktop:grid-cols-2 grid-cols-1 gap-x-60 px-20;
+  }
+}
+.backBtnBg {
+  @apply rounded-2xl pr-6 pl-2 py-0.5 md:pl-0 md:pb-20;
+  background-color: rgba(27, 29, 31, 1);
+}
+
+.contentItem {
+  @apply w-full rounded-20 mb-20 bg-white bg-opacity-10 flex cursor-pointer;
+
+  .imageWrapper {
+    @apply w-75 h-55 rounded-20 bg-whiteGray overflow-hidden my-auto;
+
+    &.skeletonImage {
+      @apply w-75 h-55;
+    }
+
+    .image {
+      @apply w-full h-full object-cover;
+    }
+  }
+
+  .description {
+    @apply flex justify-between w-full items-center ml-14 mr-20;
+
+    .category {
+      @apply text-10 flex space-x-15 items-center;
+
+      .item {
+        @apply w-20 text-center;
+      }
+
+      .itemSecondary {
+        @apply hidden md:block w-20 text-center;
+      }
+    }
+  }
+
+  .skeletonTitle {
+    @apply tablet:w-200 w-70 h-20;
+  }
+
+  .skeletonValue {
+    @apply mx-auto w-20 h-15 rounded;
+  }
+}
+
+.recipeImageContainer {
+  @apply h-96 md:hidden;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-size: auto 24rem;
+}
+
+.recipeContent {
+  background-color: rgba(27, 29, 31, 1);
+  width: 100%;
+  @apply md:relative absolute -top-4 rounded-3xl pb-32;
+}
+
+.mobileButtonGroup {
+  @apply absolute w-full flex bottom-0 z-50 pt-20 pb-20 bg-blackDark md:hidden;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
+.recipeWrapper {
+  @apply rounded-xl relative md:overflow-y-auto;
+}
+
+.recipeRightWrapper {
+  @apply w-1/2 pt-130 overflow-auto -mb-50;
+  scrollbar-width: none;
+}
+
+.recipeLabel {
+  @apply font-light text-sm;
+}
+
+.addIngridientPopup {
+  @apply overflow-y-hidden mt-100 mx-20 md:mt-0 md:mx-0 md:absolute md:top-40 md:left-1/2 md:w-400 bg-lightDarkGray z-50 rounded-3xl shadow-2xl;
+}
+
+.editPicturePopup {
+  @apply mt-100 w-full md:w-500 max-w-500 md:mt-0 md:mx-0 md:absolute md:top-40 md:left-1/2 bg-lightDarkGray z-60 rounded-3xl shadow-2xl;
+}
+
+.editCookingModePopup {
+  @apply h-full md:h-3/4 w-full md:w-500 max-w-500 md:mt-0 md:mx-0 md:absolute md:top-40 md:left-1/2 bg-lightDarkGray z-100 md:rounded-3xl md:shadow-2xl relative;
+}
+
+.editCookingModePopupContent {
+  @apply pr-20 pt-150 md:pt-0;
+  max-height: calc(100vh - 300px);
+}
+
+.editPictureIngridientPopupContent {
+  @apply pr-20;
+  max-height: calc(100vh - 300px);
+}
+
+.ingridientPopupContent {
+  @apply overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-600 pr-20;
+  max-height: calc(100vh - 380px);
+}
+
+.ingridientPopupContentEdit {
+  @apply overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-600 pr-20;
+  max-height: calc(100vh - 300px);
+}
+
+.pageWrapper {
+  @apply block md:hidden;
+  margin-left: -1.25rem;
+  margin-right: -1.25rem;
+}
+
+.pageWrapperDesktop {
+  @apply hidden md:flex md:gap-60 md:mx-auto md:max-w-7xl md:h-full md:overflow-hidden;
+  background: transparent;
+  ::-webkit-scrollbar {
+    background: transparent;
+    width: 0px;
+  }
+}
+
+.ingridientContainer {
+  @apply rounded-3xl mt-14 pt-4 pl-4 pr-4 pb-4 md:pt-20 md:pl-30 md:pr-30 bg-lightDarkGray;
+}
+
+.actionBtn {
+  @apply rounded-3xl px-4 py-4 w-1/2 bg-lightDarkGray;
+}
+
+.backgroundPopupLayer {
+  @apply -ml-20 md:-ml-450 absolute h-full w-full bg-black z-40 bg-opacity-75;
+}
+
+.nutritionBorderItem {
+  @apply text-center relative px-15 md:px-25;
+}
+
+.nutritionBorderItemFirst {
+  @apply text-center relative pr-15 md:pr-25;
+}
+
+.nutritionBorderItem:after,
+.nutritionBorderItemFirst:after {
+  content: '';
+  width: 1px;
+  position: absolute;
+  top: 20%;
+  height: 60%;
+  right: 0;
+  background-color: #fff;
+}
+
+.pieceInput {
+  @apply font-light text-xs border-opacity-30;
+  min-width: 3.75rem;
+}

@@ -1,0 +1,30 @@
+.wrapper {
+  @apply flex-1 flex flex-col justify-center px-20 py-40;
+
+  .logo {
+    @apply w-1/2 mx-auto;
+  }
+
+  .form {
+    @apply mt-75;
+
+    .rememberMe {
+      @apply flex items-center justify-between;
+
+    }
+    .link {
+      @apply ml-20 text-brownSemiDark underline;
+    }
+    .comment {
+      @apply text-sm font-light flex justify-center w-full mt-20;
+    }
+  }
+
+  .button {
+    @apply w-full mt-20;
+
+    .text {
+      @apply uppercase whitespace-nowrap;
+    }
+  }
+}

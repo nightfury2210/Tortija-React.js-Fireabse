@@ -1,0 +1,24 @@
+.wrapper {
+  @apply grid grid-cols-2 miniLandscape:grid-cols-2 tablet:grid-cols-4 gap-30;
+  .skeletonTitle {
+    @apply h-20;
+  }
+
+  .skeletonValue {
+    @apply w-40 h-15 mb-1 mx-auto;
+  }
+
+  .title {
+    @apply text-15 font-semibold overflow-hidden h-45;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .description {
+    @apply grid grid-cols-4 mt-10 text-12 font-medium leading-3;
+  }
+
+  .center {
+    @apply text-center;
+  }
+}

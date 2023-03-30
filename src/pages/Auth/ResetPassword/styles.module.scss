@@ -1,0 +1,22 @@
+.wrapper {
+  @apply flex-1 flex flex-col justify-center px-20 py-40;
+
+  .form {
+    @apply mt-8 space-y-20;
+  }
+
+  .comment {
+    @apply text-sm my-20;
+
+    .link {
+      @apply ml-20 text-brownSemiDark underline;
+    }
+  }
+  .button {
+    @apply w-full;
+
+    .text {
+      @apply uppercase whitespace-nowrap;
+    }
+  }
+}

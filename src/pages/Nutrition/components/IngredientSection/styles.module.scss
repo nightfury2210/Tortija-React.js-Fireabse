@@ -1,0 +1,47 @@
+.wrapper {
+  @apply w-full space-y-25 mt-25 text-white;
+
+  .header {
+    @apply flex justify-end space-x-15 w-full items-center pr-30 text-10;
+
+    .item {
+      @apply w-20 text-center;
+    }
+  }
+
+  .contentItem {
+    @apply w-full rounded-20 bg-white bg-opacity-10 flex cursor-pointer;
+
+    .imageWrapper {
+      @apply w-75 h-75 min-w-75 rounded-20 bg-whiteGray overflow-hidden;
+
+      &.skeletonImage {
+        @apply w-75 h-75;
+      }
+
+      .image {
+        @apply w-full h-full object-cover;
+      }
+    }
+
+    .description {
+      @apply flex justify-between w-full items-center ml-14 mr-30;
+
+      .category {
+        @apply text-10 flex space-x-15 items-center;
+
+        .item {
+          @apply w-20 text-center;
+        }
+      }
+    }
+
+    .skeletonTitle {
+      @apply tablet:w-200 w-70 h-20;
+    }
+
+    .skeletonValue {
+      @apply mx-auto w-20 h-15 rounded;
+    }
+  }
+}

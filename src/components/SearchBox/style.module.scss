@@ -1,0 +1,21 @@
+.inputStyle {
+  @apply appearance-none block w-full pl-25 pr-60 py-10 rounded-full text-18 placeholder-whiteGray focus:outline-none bg-white bg-opacity-20 text-white;
+}
+
+[type='search']::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background-image: url(data:image/svg+xml;base64,PCEtLSBSZXBsYWNlIHRoZSBjb250ZW50cyBvZiB0aGlzIGVkaXRvciB3aXRoIHlvdXIgU1ZHIGNvZGUgLS0+Cgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgY2xhc3M9ImgtNiB3LTYiIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCAyNCAyNCIgc3Ryb2tlPSIjZmZmZmZmIj4KICA8cGF0aCBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIgZD0iTTYgMThMMTggNk02IDZsMTIgMTIiIC8+Cjwvc3ZnPg==);
+  background-size: 15px 15px;
+  cursor: pointer;
+}
+
+.searchWrapper {
+  @apply absolute inset-y-0 right-25 flex items-center;
+
+  .searchIcon {
+    @apply text-brownSemiDark h-27;
+  }
+}

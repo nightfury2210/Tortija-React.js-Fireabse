@@ -1,0 +1,34 @@
+.headline1 {
+  @apply text-30 font-light;
+  @screen desktop {
+    @apply text-35
+  }
+}
+
+.headline2 {
+  @apply font-semibold text-3xl;
+}
+
+.headline3 {
+  @apply font-light text-25;
+}
+
+.headline4 {
+  @apply font-medium text-18;
+}
+
+.headline5 {
+  @apply font-medium;
+}
+
+.headline6 {
+  @apply font-normal;
+}
+
+.backBtn {
+  @apply flex items-center;
+
+  .icon {
+      @apply text-brownSemiDark;
+  }
+}

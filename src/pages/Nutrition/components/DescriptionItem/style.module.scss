@@ -1,0 +1,11 @@
+.wrapper {
+  @apply h-screen overflow-hidden;
+
+  .content {
+    @apply grid desktop:grid-cols-2 grid-cols-1 gap-x-60 px-20;
+  }
+}
+
+.descItem {
+  @apply flex pb-4 rounded-3xl mb-20 pt-4 pl-6 pr-6 justify-between bg-lightDarkGray;
+}

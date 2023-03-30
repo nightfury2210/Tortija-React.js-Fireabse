@@ -1,0 +1,42 @@
+.text {
+    @apply text-25 font-semibold mb-25;
+}
+
+.html {
+    @apply max-w-full relative;
+
+    :global {
+        .wp-video {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        p {
+            @apply pb-15;
+          
+            a {
+              @apply inline;
+            }
+        }
+
+        img {
+            @apply w-full;
+        }
+          
+        ul {
+            @apply my-10 list-disc pl-20;
+        
+            li p {
+                @apply inline;
+            }
+        }
+        
+        ol {
+            @apply my-10 list-decimal pl-20;
+            
+            li p {
+                @apply inline;
+            }
+        }
+    }
+}

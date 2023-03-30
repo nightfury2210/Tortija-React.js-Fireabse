@@ -1,0 +1,23 @@
+.header {
+  @apply flex items-center space-x-15 mb-35;
+
+  .filterIcon {
+    @apply text-brownSemiDark transform rotate-90;
+  }
+}
+
+.wrapper {
+  @apply space-y-30 py-30;
+
+  .divider {
+    @apply border-white border-opacity-10;
+  }
+
+  .loading {
+    @apply py-100 flex justify-center;
+  }
+
+  .selector {
+    @apply w-full mb-10;
+  }
+}

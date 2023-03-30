@@ -1,0 +1,39 @@
+.wrapper {
+  @apply flex-1 flex flex-col justify-center px-20 py-40;
+
+  .gym {
+    @apply w-full text-center mb-8;
+
+    .name {
+      @apply mt-6 text-2xl font-bold text-gray-600;
+    }
+
+    .qrcode {
+      @apply w-32 h-32 mx-auto;
+    }
+  }
+
+  .form {
+    @apply space-y-30;
+
+    .comment {
+      @apply flex items-center justify-center text-sm pt-25;
+
+      .link {
+        @apply ml-20 text-brownSemiDark underline;
+      }
+    }
+  }
+
+  .button {
+    @apply w-full;
+
+    .socialLogo {
+      @apply h-27 w-27 mr-10;
+    }
+
+    .text {
+      @apply uppercase whitespace-nowrap;
+    }
+  }
+}

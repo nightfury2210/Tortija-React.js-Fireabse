@@ -1,0 +1,18 @@
+.backgroundPopupLayer {
+  @apply -ml-20 md:-ml-450 absolute h-full w-full bg-black z-40 bg-opacity-75;
+}
+
+.editIngridientPopup {
+  @apply mt-100 w-full md:w-500 max-w-500 md:mt-0 md:mx-0 md:absolute md:top-40 md:left-1/2 bg-lightDarkGray z-60 rounded-3xl shadow-2xl;
+}
+
+.editIngridientPopupContent {
+  @apply pr-20 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-600;
+  max-height: calc(100vh - 200px);
+}
+
+.addRecipePopupContent {
+  @apply pr-20 overflow-y-scroll scrollbar-none;
+  max-height: calc(100vh - 200px);
+  scrollbar-width: none;
+}

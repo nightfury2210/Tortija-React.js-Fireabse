@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex-1 flex flex-col justify-center px-20 py-40 items-center;
+}
+
+.image {
+  @apply w-1/2 mb-80;
+}
+
+.text {
+  @apply text-white w-full font-semibold text-center text-42 whitespace-pre mb-80;
+}

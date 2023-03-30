@@ -1,0 +1,11 @@
+.wrapper {
+  @apply flex items-center;
+
+  .checkbox {
+    @apply h-4 w-4 border-gray-300 rounded;
+  }
+
+  .label {
+    @apply ml-2 block text-sm text-gray-300;
+  }
+}

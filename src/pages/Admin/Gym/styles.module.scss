@@ -1,0 +1,11 @@
+.wrapper {
+  @apply w-full;
+
+  .header {
+    @apply mb-5;
+  }
+
+  .content {
+    @apply flex items-center justify-between w-11/12 mb-4 mx-auto;
+  }
+}

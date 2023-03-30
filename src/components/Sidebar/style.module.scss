@@ -1,0 +1,62 @@
+.sidebar {
+    @apply fixed z-10 bottom-15 inset-x-15 bg-blackDark shadow-main rounded-full;
+    @screen desktop {
+        @apply w-300 inset-55 rounded-42 overflow-hidden;
+        .navContainer {
+            @apply overflow-auto h-full py-50 space-y-35 relative w-full  flex flex-wrap items-stretch;
+        }
+    }
+
+    .nav {
+        @apply text-whiteGray flex p-25 justify-between;
+        @screen desktop {
+            @apply mt-7 block space-y-35 px-25 py-0;
+        }
+
+        .link {
+            @apply text-lg flex items-center;
+            @screen desktop {
+                @apply bg-white bg-opacity-10 rounded-full px-35 py-15 space-x-15;
+            }
+            .icon * {
+                @apply stroke-current text-white;
+            }
+
+            .label {
+                @apply hidden text-15 text-white font-semibold uppercase;
+                @screen desktop {
+                    @apply block;
+                }
+            }
+            &.selected {
+                .icon * {
+                    @apply stroke-current text-brownSemiDark;
+                }
+                @screen desktop {
+                    .icon * {
+                        @apply stroke-current text-white;
+                    }
+                    @apply bg-gradient-to-l from-brownDark to-brownLight;
+                }
+            }
+        }
+    }
+
+    .logoutBtn {
+        @apply hidden w-full;
+        @screen desktop {
+            @apply block;
+        }
+    }
+
+    .adminLinkWrapper {
+        @apply hidden;
+        @screen desktop {
+            @apply block;
+        }
+    }
+
+    .adminBtn {
+        @apply absolute top-55 right-50 text-10 text-brownSemiLight;
+    }
+}

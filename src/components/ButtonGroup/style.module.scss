@@ -1,0 +1,7 @@
+.button {
+  @apply rounded-full p-10 text-white text-center text-15 bg-white bg-opacity-10 truncate cursor-pointer select-none;
+
+  &.active {
+    @apply bg-gradient-to-r from-brownDark to-brownLight;
+  }
+}

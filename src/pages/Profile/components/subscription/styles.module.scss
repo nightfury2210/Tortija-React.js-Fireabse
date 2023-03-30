@@ -1,0 +1,7 @@
+.header {
+  @apply sticky top-0 bg-blackDark z-50;
+}
+
+.content {
+  @apply space-y-30 pt-30 pb-100 flex flex-col justify-center items-center;
+}

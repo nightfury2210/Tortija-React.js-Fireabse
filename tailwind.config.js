@@ -1,0 +1,180 @@
+const rem = num => ({ [num]: `${num / 16}rem` });
+
+const colors = {
+  darkBlue: '#252f3f',
+  lightGray: '#f3f4f6',
+  whiteGray: '#b7bcc4',
+  lightGrayAlternative: '#404243',
+  warmGrey: '#494A4C',
+  brownDark: '#84502B',
+  brownSemiDark: '#C97132',
+  brownMedium: '#C68D61',
+  brownSemiLight: '#D99F71',
+  brownLight: '#DAA072',
+  brownWhite: '#D49B6E33',
+  blackDark: '#1B1D1F',
+  blackSemiDark: '#707070',
+  lightDarkGray: "#2a2c2e",
+  lightRed: "#fc0303",
+  lightGreen: "#5efc03",
+};
+
+const typography = {
+  fontFamily: {
+    sans: ['Roboto', 'Arial', 'monospace'],
+  },
+  fontSize: {
+    ...rem(8),
+    ...rem(10),
+    ...rem(12),
+    ...rem(13),
+    ...rem(14),
+    ...rem(15),
+    ...rem(16),
+    ...rem(17),
+    ...rem(18),
+    ...rem(20),
+    ...rem(22),
+    ...rem(25),
+    ...rem(30),
+    ...rem(35),
+    ...rem(40),
+    ...rem(42),
+    ...rem(45),
+    ...rem(60),
+    ...rem(90),
+  },
+  lineHeight: {
+    1: 1,
+    ...rem(16),
+    ...rem(18),
+    ...rem(20),
+    ...rem(22),
+    ...rem(24),
+    ...rem(26),
+    ...rem(28),
+    ...rem(30),
+    ...rem(38),
+    ...rem(46),
+    ...rem(48),
+    ...rem(55),
+    ...rem(65),
+    ...rem(95),
+  },
+  letterSpacing: {
+    normal: `${0.3 / 16}rem`,
+  },
+  fontWeight: {
+    light: '300',
+    normal: '400',
+    medium: '500',
+    bold: '700',
+  },
+};
+
+module.exports = {
+  purge: ['./src/**/*.js', './src/**/*.jsx', './src/**/*.ts', './src/**/*.tsx', './src/**/*.scss'],
+  darkMode: false, // or 'media' or 'class'
+  theme: {
+    extend: {
+      colors,
+      spacing: {
+        px: '1px',
+        0: '0',
+        '3/40': '7.5%',
+        '1/12': '8.333333%',
+        ...rem(5),
+        ...rem(7),
+        ...rem(10),
+        ...rem(14),
+        ...rem(15),
+        ...rem(16),
+        ...rem(20),
+        ...rem(25),
+        ...rem(27),
+        ...rem(30),
+        ...rem(35),
+        ...rem(40),
+        ...rem(44),
+        ...rem(45),
+        ...rem(46),
+        ...rem(50),
+        ...rem(55),
+        ...rem(60),
+        ...rem(65),
+        ...rem(70),
+        ...rem(75),
+        ...rem(80),
+        ...rem(85),
+        ...rem(90),
+        ...rem(95),
+        ...rem(100),
+        ...rem(110),
+        ...rem(120),
+        ...rem(130),
+        ...rem(150),
+        ...rem(200),
+        ...rem(220),
+        ...rem(250),
+        ...rem(300),
+        ...rem(320),
+        ...rem(350),
+        ...rem(400),
+        ...rem(450)
+      },
+      width: {
+        ...rem(500),
+      },
+      zIndex: {
+        '-10': '-10',
+        '60': '60',
+        '100': '100',
+        '150': '150',
+      },
+      height: {
+        content: 'fit-content',
+        inherit: 'inherit',
+      },
+      fontSize: typography.fontSize,
+      dropShadow: {
+        main: '0 0 30px #D49B6E33',
+      },
+      boxShadow: {
+        main: '0 0 30px #00000099',
+      },
+      lineHeight: typography.lineHeight,
+      borderRadius: {
+        ...rem(20),
+        ...rem(25),
+        ...rem(30),
+        ...rem(42),
+      },
+      screens: {
+        miniLandscape: '400px',
+        phoneLandscape: '480px',
+        tablet: '768px',
+        desktop: '1025px',
+        large: '1260px',
+        xl: '1440px',
+        xxl: '1600px',
+        macBookPro: '2500px'
+      },
+      minWidth: {
+        ...rem(75),
+      },
+      maxWidth: {
+        ...rem(500),
+      },
+      minHeight: {
+        ...rem(400),
+      }
+    },
+  },
+  variants: {
+    container: [],
+    extend: {},
+  },
+  plugins: [
+    require('tailwind-scrollbar')
+  ],
+};

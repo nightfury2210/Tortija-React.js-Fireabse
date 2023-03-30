@@ -1,0 +1,7 @@
+.wrapper {
+  @apply desktop:pl-400 w-full relative h-screen overflow-hidden;
+
+  .container {
+    @apply h-full px-20 desktop:pr-55 desktop:pb-50 pb-100;
+  }
+}

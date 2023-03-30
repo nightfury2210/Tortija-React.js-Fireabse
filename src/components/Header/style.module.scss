@@ -1,0 +1,18 @@
+.header {
+  @apply sticky top-0 bg-blackDark z-10 pt-30 pb-10;
+
+  .wrapper {
+    @apply flex justify-between items-center tablet:mb-35 mb-20;
+
+    .searchContainer {
+      @apply flex items-center space-x-50;
+
+      .searchDesktop {
+        @apply tablet:block hidden w-450;
+      }
+      .filterIcon {
+        @apply text-brownSemiDark cursor-pointer transform rotate-90;
+      }
+    }
+  }
+}

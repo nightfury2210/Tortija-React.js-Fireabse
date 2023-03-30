@@ -1,0 +1,23 @@
+.faqWrapper {
+    @apply space-y-25 mt-40;
+}
+
+.btn {
+    @apply w-full;
+
+    .btnInner {
+        @apply w-full flex justify-between items-center;
+    }
+    
+    .btnText {
+        @apply text-18 font-light;
+    }
+    
+    .icon {
+        @apply text-brownSemiDark;
+    }
+}
+
+.skeletonBtn {
+    @apply w-full animate-pulse h-65 bg-white bg-opacity-40;
+}

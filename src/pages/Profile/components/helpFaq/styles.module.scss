@@ -1,0 +1,15 @@
+.header {
+  @apply sticky top-0 bg-blackDark z-50;
+}
+
+.content {
+  @apply grid grid-cols-2 gap-30 pb-100;
+
+  .button {
+    @apply px-20 py-16 h-full flex justify-center items-center text-center rounded-20 filter drop-shadow-main text-17 leading-20 font-bold bg-white text-white bg-opacity-20;
+
+    .icon {
+      @apply text-brownSemiDark mx-auto mb-20;
+    }
+  }
+}

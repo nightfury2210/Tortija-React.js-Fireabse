@@ -1,0 +1,53 @@
+.searchMobile {
+  @apply tablet:hidden block w-full mb-30;
+}
+
+.switchContainer {
+  @apply desktop:w-1/2 w-full mx-auto;
+}
+
+.searchContainer {
+  @apply flex items-center space-x-50;
+
+  .searchDesktop {
+    @apply tablet:block hidden w-450;
+  }
+  .filterIcon {
+    @apply text-brownSemiDark cursor-pointer transform rotate-90;
+  }
+}
+
+.container {
+  @apply max-w-4xl mx-auto pt-30;
+
+  .contentHeader {
+    @apply flex justify-between items-center mb-25;
+  }
+}
+
+.headerInner {
+  @apply flex flex-col w-full;
+}
+
+.headlineWrapper {
+  @apply flex tablet:justify-center justify-end w-full mb-30;
+}
+
+.backgroundPopupLayer {
+  @apply -ml-20 md:-ml-450 absolute h-full w-full bg-black z-40 bg-opacity-75;
+}
+
+.editIngridientPopup {
+  @apply mt-100 w-full md:w-500 max-w-500 md:mt-0 md:mx-0 md:absolute md:top-40 md:left-1/2 bg-lightDarkGray z-60 rounded-3xl shadow-2xl;
+}
+
+.editIngridientPopupContent {
+  @apply pr-20 overflow-y-scroll scrollbar-thin scrollbar-thumb-gray-600;
+  max-height: calc(100vh - 200px);
+}
+
+.addRecipePopupContent {
+  @apply pr-20 overflow-y-scroll scrollbar-none;
+  max-height: calc(100vh - 200px);
+  scrollbar-width: none;
+}

@@ -1,0 +1,15 @@
+.header {
+  @apply flex mb-6 items-center;
+
+  .backButton {
+    @apply cursor-pointer mr-4;
+  }
+}
+
+.monthSelect {
+  @apply w-150 mb-10;
+}
+
+.table {
+  @apply w-2/3 mx-auto;
+}
